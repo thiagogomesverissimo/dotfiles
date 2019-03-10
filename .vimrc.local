@@ -68,3 +68,6 @@ let g:phpactorOmniError = v:true
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 nmap <F6> <Plug>(JavaComplete-Imports-Add)
 imap <F6> <Plug>(JavaComplete-Imports-Add)
+
+" NERDtree
+let NERDTreeIgnore = ['\.pyc$','\.class$']
