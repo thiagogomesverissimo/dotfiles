@@ -13,7 +13,7 @@ export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status php_version laravel_version no
 if tmux ls 2>/dev/null | grep -q attached ; then
     echo ""
 else
-    tmux
+tmux #default
 fi
 
 export SDKMAN_DIR="/home/thiago/.sdkman"
