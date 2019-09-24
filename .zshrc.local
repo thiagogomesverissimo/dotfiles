@@ -12,7 +12,7 @@ export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status php_version laravel_version no
 alias drupalcs="phpcs --standard=Drupal --extensions='php,module,inc,install,test,profile,theme,css,info,txt,md'"
 alias drupalcsp="phpcs --standard=DrupalPractice --extensions='php,module,inc,install,test,profile,theme,css,info,txt,md'"
 alias drupalcbf="phpcbf --standard=Drupal --extensions='php,module,inc,install,test,profile,theme,css,info,txt,md'"
-alias gcc='gcc -Wall -ansi -pedantic -O2'
+#alias gcc='gcc -Wall -ansi -pedantic -O2'
 
 export SDKMAN_DIR="/home/thiago/.sdkman"
 [[ -s "/home/thiago/.sdkman/bin/sdkman-init.sh" ]] && source "/home/thiago/.sdkman/bin/sdkman-init.sh"
