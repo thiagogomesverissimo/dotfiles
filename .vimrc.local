@@ -27,7 +27,8 @@ set softtabstop=4
 set backspace=2
 
 " configuração por arquivo
-autocmd BufNewFile,BufRead *.blade.php set filetype=bladeautocmd Filetype java setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab!
+autocmd BufNewFile,BufRead *.blade.php set filetype=blade
+autocmd Filetype java setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab!
 autocmd Filetype php,blade,twig,html,css,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd Filetype yml,yaml setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
