@@ -76,3 +76,6 @@ let g:victionary#map_defaults = 0
 nmap <Leader>pp <Plug>(victionary#define_under_cursor)
 nmap <Leader>ss <Plug>(victionary#synonym_under_cursor)
 
+" Cor das palavras erradas legível 
+hi SpellBad ctermfg=red guifg=red
+
