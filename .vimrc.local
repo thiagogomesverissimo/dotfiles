@@ -26,7 +26,7 @@ set softtabstop=4
 " make backspace work like most other programs
 set backspace=2
 
-" configuração por arquivo
+" configuração de identação por extensão do arquivo
 autocmd BufNewFile,BufRead *.blade.php set filetype=blade
 autocmd Filetype java setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab!
 autocmd Filetype php,blade,twig,html,css,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
@@ -49,33 +49,32 @@ set wildmenu
 
 let mapleader = ","
 
-" vim-php-refactoring-toolbox
-let g:vim_php_refactoring_auto_validate_sg = 1
-let g:vim_php_refactoring_auto_validate_rename = 1
-let g:vim_php_refactoring_auto_validate_visibility = 1
-let g:vim_php_refactoring_make_setter_fluent = 1
-
-" mappings for phpactor - vou liberando conforme eu for usando
-nmap <Leader>cc :call phpactor#ClassNew()<CR>
-nmap <Leader>us:call phpactor#UseAdd()<CR>
-
-" autocomplete
-autocmd FileType php setlocal omnifunc=phpactor#Complete
-let g:phpactorOmniError = v:true
-
-" java
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-nmap <F6> <Plug>(JavaComplete-Imports-Add)
-imap <F6> <Plug>(JavaComplete-Imports-Add)
-
 " NERDtree
 let NERDTreeIgnore = ['\.pyc$','\.class$']
-
-" victionary
-let g:victionary#map_defaults = 0
-nmap <Leader>pp <Plug>(victionary#define_under_cursor)
-nmap <Leader>ss <Plug>(victionary#synonym_under_cursor)
 
 " Cor das palavras erradas legível 
 hi SpellBad ctermfg=red guifg=red
 
+" vim-php-refactoring-toolbox
+" let g:vim_php_refactoring_auto_validate_sg = 1
+" let g:vim_php_refactoring_auto_validate_rename = 1
+" let g:vim_php_refactoring_auto_validate_visibility = 1
+" let g:vim_php_refactoring_make_setter_fluent = 1
+
+" mappings for phpactor - vou liberando conforme eu for usando
+" nmap <Leader>cc :call phpactor#ClassNew()<CR>
+" nmap <Leader>us:call phpactor#UseAdd()<CR>
+
+" autocomplete
+" autocmd FileType php setlocal omnifunc=phpactor#Complete
+" let g:phpactorOmniError = v:true
+
+" java
+" autocmd FileType java setlocal omnifunc=javacomplete#Complete
+" nmap <F6> <Plug>(JavaComplete-Imports-Add)
+" imap <F6> <Plug>(JavaComplete-Imports-Add)
+
+" victionary
+" let g:victionary#map_defaults = 0
+" nmap <Leader>pp <Plug>(victionary#define_under_cursor)
+" nmap <Leader>ss <Plug>(victionary#synonym_under_cursor)
