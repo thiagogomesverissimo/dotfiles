@@ -33,3 +33,7 @@ if tmux ls 2>/dev/null | grep -q attached ; then
 else
 tmux #default
 fi
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
