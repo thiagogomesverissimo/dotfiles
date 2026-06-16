@@ -34,9 +34,4 @@ else
 tmux #default
 fi
 
-# Pyenv:
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
